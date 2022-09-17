@@ -17,7 +17,7 @@ const displayPhones = (phones, dataLimit) =>{
         showAll.classList.remove('d-none');
     }
     else{
-        showAll.classList.add('d-hidden');
+        showAll.classList.add('d-none');
     }
     
 
@@ -25,7 +25,7 @@ const displayPhones = (phones, dataLimit) =>{
     const noPhone = document.getElementById('no-found-message');
     if(phones.length === 0){
         noPhone.classList.remove('d-none');
-        showAll.classList.add('d-hidden');
+        showAll.classList.add('d-none');
     }
     else{
         noPhone.classList.add('d-none');
